@@ -1,4 +1,4 @@
-class LazySusanGenerator < Rails::Generator::Base
+class LazySusanGenerator < Rails::Generators::Base
   DATABASE = ActiveRecord::Base.connection  
   def generate_lazy_susan
     results = {}
