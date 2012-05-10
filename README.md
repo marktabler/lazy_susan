@@ -8,7 +8,7 @@ Lazy Susan is a rake task that looks for tables in your database that are missin
 Lazy Susan is currently considered a beta project. It doesn't do anything destructive, but it's probably worth checking out the generated migrations to make sure the resulting migration is one that you're comfortable running on your database.
 
 #### Operation
-Simply list the gem in your gemfile, then run `rails g lazy_susan` in your Rails project. She'll take care of the rest.
+In order to use Lazy Susan, you need to have your development database up migrated up; the gem works by inspecting your database through ActiveRecord. Once that's taken care of, simply list the gem in your gemfile, and run `rails g lazy_susan`. She'll take care of the rest.
 
 Technical Details
 -----------------
