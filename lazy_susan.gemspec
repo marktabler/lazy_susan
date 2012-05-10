@@ -4,8 +4,9 @@ require File.expand_path('../lib/lazy_susan/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Mark Tabler\n"]
   gem.email         = ["mark.tabler@fallingmanstudios.net"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{An Automatic Index Migration Generator}
+  gem.summary       = %q{LazySusan generates index migrations where they are needed; which is to say any column detected as a primary or foreign key that does not already have an index.}
+
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
