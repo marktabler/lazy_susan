@@ -2,7 +2,7 @@ Lazy Susan
 ==========
 
 #### Overview
-Lazy Susan is a rake task that looks for tables in your database that are missing indexes, and generates a Rails migration to automatically fix the issue. Lazy Susan thinks that any "id" column in your database, as well as any column whose name ends in "_id", ought to have an index on it. Additionally, if Lazy Susan finds a table with exactly two columns ending in "_id", she suspects that she's looking at a join table, and figures that the join ought to be indexed both ways.
+Lazy Susan is a rails generator that looks for tables in your database that are missing indexes, and crates a Rails migration to automatically fix the issue. Lazy Susan thinks that any "id" column in your database, as well as any column whose name ends in "_id", ought to have an index on it. Additionally, if Lazy Susan finds a table with exactly two columns ending in "_id", she suspects that she's looking at a join table, and figures that the join ought to be indexed both ways.
 
 #### Stability Notice
 Lazy Susan is currently considered a beta project. It doesn't do anything destructive, but it's probably worth checking out the generated migrations to make sure the resulting migration is one that you're comfortable running on your database.
