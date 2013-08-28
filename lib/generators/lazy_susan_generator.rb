@@ -46,7 +46,6 @@ def columns_needing_indexes(table_name)
   results = []
   DATABASE.columns(table_name).each do |column|
     results << column.name.to_sym if column.name.last(3) == "_id"
-    results << column.name.to_sym if column.name == "id"
   end
   results
 end
